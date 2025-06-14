@@ -1,0 +1,9 @@
+[Event "LLM‑Calibration"]
+[Site "Local"]
+[Date "2025-06-10"]
+[Round "?"]
+[White "Stockfish (ELO: 1370)"]
+[Black "GPT-3.5 Turbo Instruct"]
+[Result "0-1"]
+
+1. b4 Nc6 2. Ba3 g5 3. Bb2 e5 4. h4 gxh4 5. c4 Bxb4 6. Nf3 d6 7. Nc3 Bxc3 8. Bxc3 Nf6 9. Qc2 Be6 10. Rxh4 Qd7 11. Rb1 O-O-O 12. Qa4 Kb8 13. d3 Nd4 14. Qxd7 Nxf3+ 15. gxf3 Nxd7 16. Bd2 Rdg8 17. f4 Rg1 18. Rh2 h5 19. Be3 h4 20. fxe5 Nxe5 21. f4 Ng4 22. Bxg1 Nxh2 23. Bxh2 h3 24. e3 Rg8 25. Kf2 d5 26. c5 d4 27. e4 Bxa2 28. Rb2 Be6 29. f5 Bd7 30. Re2 Bb5 31. Rc2 a5 32. Rb2 Ba6 33. Kf3 a4 34. Rf2 a3 35. e5 Bb5 36. f6 Bc6+ 37. Ke2 a2 38. Rf5 a1=Q 39. Bxh3 Qb2+ 40. Kd1 Ba4+ 41. Ke1 Qxh2 42. e6 Rg1+ 43. Rf1 Qg3+ 44. Kd2 Qe3# 0-1

@@ -1,0 +1,9 @@
+[Event "LLM‑Calibration"]
+[Site "Local"]
+[Date "2025-06-10"]
+[Round "?"]
+[White "Stockfish (ELO: 1425)"]
+[Black "GPT-3.5 Turbo Instruct"]
+[Result "1-0"]
+
+1. e3 h5 2. Qf3 e5 3. Ke2 Na6 4. Kd1 Nb4 5. c3 Nc6 6. Ke1 d5 7. Qe2 e4 8. h3 Ne5 9. Qb5+ c6 10. Qe2 Bg4 11. hxg4 hxg4 12. Rxh8 Nd3+ 13. Kd1 Qf6 14. f3 gxf3 15. gxf3 O-O-O 16. Rh5 g6 17. Rh2 Bd6 18. Bh3+ Kb8 19. b3 Bxh2 20. fxe4 Bxg1 21. Qxd3 dxe4 22. Qe2 Qf3 23. Bg2 Qxe2+ 24. Kxe2 f5 25. c4 Nf6 26. Na3 Ng4 27. Nb1 Rh8 28. Ba3 Rh2 29. Kf1 Bxe3 30. Bd6+ Kc8 31. Bxh2 Nxh2+ 32. Ke2 Bd4 33. Nc3 Ng4 34. Rh1 Kd7 35. Nxe4 fxe4 36. Bxe4 Nf2 37. Rh4 g5 38. Rh7+ Kd6 39. Bg2 b5 40. Rh6+ Ke5 41. cxb5 cxb5 42. Rh8 Kf4 43. Rb8 Kg3 44. Bc6 g4 45. Rxb5 Kh2 46. Rg5 g3 47. Kf3 Nh3 48. Rxg3 Ng1+ 49. Kg4 Ne2 50. Rh3+ Kg1 51. b4 Kf2 52. Rh2+ Ke1 53. b5 Kxd2 54. Kf5 Ke3 55. Rh4 Ng3+ 56. Kg6 Ne2 57. a4 Nf4+ 58. Kh7 Ne6 59. Kg8 Nc5 60. Rh3+ Kd2 61. a5 Ne6 62. Be4 Ng5 63. Rh2+ Ke3 64. Bc6 Kf4 65. Kf8 Ke5 66. Rh6 Ne6+ 67. Kf7 Nd8+ 68. Kf8 Ne6+ 69. Ke7 Bc5+ 70. Kf7 Nd8+ 71. Ke8 Ne6 72. Bd7 Nc7+ 73. Kd8 Nd5 74. Rh5+ Kd6 75. Rh2 Nf6 76. Bf5 Nd5 77. Rh3 Ne7 78. Bd7 Nd5 79. Bc6 Nf6 80. Rh6 Ke5 81. Kc7 Ng4 82. Rh4 Nf6 83. Kd8 Kd6 84. Rh3 Ke5 85. Rh1 Kd6 86. Kc8 Ng4 87. Rh7 Ne5 88. Bd7 Nc4 89. Rh6+ Ke7 90. Re6+ Kf7 91. Rc6 Nxa5 92. Be8+ Kxe8 93. Rxc5 Nb3 94. Rd5 Ke7 95. Rh5 Kd6 96. Kb8 Nd4 97. Kxa7 Kc7 98. Rh7+ Kc8 99. Rh5 Kc7 100. Ka6 Kb8 101. Rh8+ Kc7 102. b6+ Kc6 103. Rh6+ Kd7 104. Rh1 Kc8 105. Rh8+ Kd7 106. Rh6 Kc8 107. b7+ Kc7 108. Rh7+ Kb8 109. Rd7 Nc6 110. Kb6 Ne7 111. Rd8+ Nc8+ 112. bxc8=R# 1-0

@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm_chess"
+version = "0.1.0"
+description = "A framework for making LLMs play chess."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Aidan Cooper", email = "aidan@aidancooper.co.uk" }]
+license = { text = "MIT" }
+
+dependencies = [
+    "backoff",
+    "python-dotenv",
+    "python-chess",
+    "google-generativeai",
+    "openai",
+    "sglang",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "black==25.1.0",
+    "ruff==0.11.6",
+    "mypy==1.15.0",
+    "pre-commit",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AidanCooper/llm-chess"
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+exclude = [
+    "main.py",
+    "script.py",
+]
+
+[tool.mypy]
+python_version = 3.12
+strict = true
+disallow_untyped_decorators = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["llm_chess"]
+
+[tool.setuptools]
+packages = ["llm_chess"]

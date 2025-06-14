@@ -1,0 +1,9 @@
+[Event "LLM‑Calibration"]
+[Site "Local"]
+[Date "2025-06-10"]
+[Round "?"]
+[White "GPT-3.5 Turbo Instruct"]
+[Black "Stockfish (ELO: 1428)"]
+[Result "Illegal move (h4h3) by GPT-3.5 Turbo Instruct"]
+
+1. Nh3 g5 2. a3 b6 3. a4 a5 4. Ra3 e5 5. Rg3 h6 6. e3 e4 7. Qh5 Nc6 8. Nxg5 hxg5 9. Qxh8 Nh6 10. Qh7 f5 11. Qg6+ Nf7 12. Bc4 Ne5 13. Bxf7+ Nxf7 14. Qxf5 d5 15. Qg6 Bd6 16. Nc3 Bb7 17. Rh3 Be5 18. Rh7 Qf6 19. Qg8+ Ke7 20. Rxf7+ Qxf7 21. Qxg5+ Ke6 22. f4 Bxc3 23. bxc3 Rh8 24. Qe5+ Kd7 25. Qxh8 Ba6 26. Qh3+ Ke8 27. Ba3 Qg6 28. Qh8+ Kd7 29. Qh3+ Kc6 30. f5 Qf7 31. Qh6+ Kb7 32. Qe6 Qh7 33. Qxd5+ Kb8 34. Qd8+ Kb7 35. Qd5+ Kc8 36. Qe6+ Kb8 37. Qe8+ Kb7 38. Qxe4+ Kb8 39. Qe8+ Ka7 40. Qe7 Qh5 41. Qxc7+ Ka8 42. Qd8+ Kb7 43. Qd7+ Ka8 44. Qd5+ Bb7 45. Qd8+ Ka7 46. Qd3 Qh4+ 47. g3 Qh3 Illegal move (h4h3) by GPT-3.5 Turbo Instruct
