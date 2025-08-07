@@ -90,7 +90,7 @@ class OpenAIPlayer(LLMPlayer):
         response = self._call_model(messages, config)
         try:
             response_dict = json.loads(response)
-            return str(response_dict["move"])
+            return str(response_dict["move"].strip())
         except (json.JSONDecodeError, KeyError) as e:
             raise ValueError("Invalid response format from the model") from e
 
@@ -103,7 +103,7 @@ class OpenAIPlayer(LLMPlayer):
             "type": "json_schema",
             "json_schema": {
                 "name": f"{notation.value.lower()}_chess_move",
-                "description": f"A valid chess move in {notation} format.",
+                "description": f"A valid chess move in {notation.value} format.",
                 "strict": True,
                 "schema": {
                     "type": "object",
@@ -112,7 +112,7 @@ class OpenAIPlayer(LLMPlayer):
                         "move": {
                             "type": "string",
                             "enum": formatted_legal_moves,
-                            "description": f"The chess move in {notation} format",
+                            "description": f"The chess move in {notation.value} format",
                         }
                     },
                     "additionalProperties": False,
