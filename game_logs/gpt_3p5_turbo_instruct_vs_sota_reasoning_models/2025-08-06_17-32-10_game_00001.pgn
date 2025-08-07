@@ -1,0 +1,9 @@
+[Event "LLM‑Calibration"]
+[Site "Local"]
+[Date "2025-08-06"]
+[Round "?"]
+[White "GPT-3.5 Turbo Instruct"]
+[Black "Grok 4"]
+[Result "1-0"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7 8. Qf3 Qc7 9. O-O-O Nbd7 10. g4 b5 11. Bxf6 Nxf6 12. g5 Nd7 13. f5 Nc5 14. f6 gxf6 15. gxf6 Bf8 16. Rg1 h5 17. Rg7 Bxg7 18. fxg7 Rg8 19. Qxh5 Rxg7 20. Qh8+ Ke7 21. Qxg7 Kd8 22. Qf8+ Kd7 23. Qxf7+ Kd8 24. Qf8+ Kd7 25. Bh3 Bb7 26. Qf7+ Kd8 27. Nxe6+ Nxe6 28. Qxe6 Bc8 29. Rxd6+ Qxd6 30. Qxd6+ Ke8 31. Nd5 Bxh3 32. Qe7# 1-0

@@ -1,0 +1,9 @@
+[Event "LLM‑Calibration"]
+[Site "Local"]
+[Date "2025-08-06"]
+[Round "?"]
+[White "GPT-3.5 Turbo Instruct"]
+[Black "OpenAI o3"]
+[Result "Illegal move by OpenAI o3"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Qb6 8. Qd2 Qxb2 9. Rb1 Qa3 10. e5 dxe5 11. fxe5 Nfd7 12. Ne4 h6 13. Bh4 Qxa2 14. Rd1 Qd5 15. Qe3 Qxe5 16. Be2 Bc5 17. Bg3 Qd5 18. c4 Bb4+ 19. Kf2 Qf5+ 20. Nxf5 Bc5 21. Nxc5 O-O 22. Ne7+ Kh8 23. Nxc8 Rxc8 24. Nxd7 Nxd7 25. Rxd7 Rd8 26. Rxf7 Rac8 27. Be5 Rf8 28. Qxh6+ Illegal move by OpenAI o3
