@@ -3,9 +3,8 @@ import os
 from typing import Any
 
 import chess
-import google.generativeai as genai
-from google.api_core import retry
-from google.generativeai.types import RequestOptions
+from google import genai
+from google.genai import types
 
 from llm_chess.core.enums import APIResponseFormat
 from llm_chess.players.llm.base import LLMPlayer
@@ -24,12 +23,12 @@ class GeminiPlayer(LLMPlayer):
         temperature: float = 0.0,
     ):
         super().__init__(name, prompt_config)
+        self.model = model
         self.api_key = api_key or os.getenv("GEMINI_API_KEY")
         if self.api_key is None:
             raise ValueError("GEMINI_API_KEY must be set in the environment or passed as argument.")
-        genai.configure(api_key=self.api_key)
         self.temperature = temperature
-        self.client = genai.GenerativeModel(model_name=model)
+        self.client = genai.Client(api_key=self.api_key)
 
         self.response_handlers = {
             APIResponseFormat.STRUCTURED: self._handle_structured_response,
@@ -54,7 +53,7 @@ class GeminiPlayer(LLMPlayer):
         formatted_moves_history = format_moves_history(board, notation)
         formatted_legal_moves = format_legal_moves(board, notation)
 
-        config = genai.GenerationConfig(
+        config = types.GenerateContentConfig(
             temperature=self.temperature,
             response_mime_type="text/x.enum",
             response_schema={"type": "STRING", "enum": formatted_legal_moves},
@@ -89,7 +88,7 @@ class GeminiPlayer(LLMPlayer):
             board, notation, self.prompt_config.move_response_has_leading_space
         )
 
-        config = genai.GenerationConfig(
+        config = types.GenerateContentConfig(
             temperature=self.temperature,
             response_mime_type="text/x.enum",
             response_schema={"type": "STRING", "enum": legal_moves},
@@ -102,7 +101,7 @@ class GeminiPlayer(LLMPlayer):
             board, notation, self.prompt_config.move_response_has_leading_space
         )
 
-        config = genai.GenerationConfig(
+        config = types.GenerateContentConfig(
             temperature=self.temperature,
             response_mime_type="application/json",
             response_schema={
@@ -117,15 +116,15 @@ class GeminiPlayer(LLMPlayer):
             raise ValueError("Invalid response format from the model") from e
 
     def _call_model(
-        self, contents: str | list[dict[str, Any]], generation_config: genai.GenerationConfig
+        self,
+        contents: str | list[dict[str, Any]],
+        generation_config: types.GenerateContentConfig,
     ) -> str:
         try:
-            response = self.client.generate_content(
+            response = self.client.models.generate_content(
+                model=self.model,
                 contents=contents,
-                generation_config=generation_config,
-                request_options=RequestOptions(
-                    retry=retry.Retry(initial=5, multiplier=2, maximum=60, timeout=300)
-                ),
+                config=generation_config,
             )
             return str(response.text).strip()
         except Exception as e:

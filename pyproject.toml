@@ -15,7 +15,7 @@ dependencies = [
     "backoff",
     "python-dotenv",
     "python-chess",
-    "google-generativeai",
+    "google-genai",
     "openai",
     "sglang",
 ]
