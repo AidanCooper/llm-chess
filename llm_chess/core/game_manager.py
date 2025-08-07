@@ -45,6 +45,7 @@ class GameManager:
         black: ChessPlayer,
         board: chess.Board | None,
         displayer: BoardDisplayer | None = None,
+        print_move: bool = False,
         sleep_time: float = 0.1,
         max_half_moves: int = 400,
         n_randomised_starting_half_moves: int = 0,
@@ -78,17 +79,22 @@ class GameManager:
                 self._print_board(board, displayer, sleep_time=sleep_time)
 
             current_player = white if board.turn == chess.WHITE else black
-            try:
-                if n_half_moves < n_randomised_starting_half_moves:
-                    move = random.choice(list(board.legal_moves))
-                else:
+            move = None
+            if n_half_moves < n_randomised_starting_half_moves:
+                move = random.choice(list(board.legal_moves))
+            else:
+                try:
                     move = current_player.make_move(board)
-            except Exception as e:
-                print(f"Error: {e}")
-                return board, f"Illegal move ({str(move)}) by {current_player.name}"
+                except Exception as e:
+                    print(f"Error: {e}")
+                    return board, f"Illegal move by {current_player.name}"
 
             if move is None:
                 break
+
+            if print_move:
+                length = max(len(white.name), len(black.name))
+                print(f"    {current_player.name:<{length}} plays: {board.san(move)}")
 
             board.push(move)
             n_half_moves += 1
