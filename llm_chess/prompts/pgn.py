@@ -27,6 +27,7 @@ class PGNPromptConfig(PromptConfig):
         result: str | None = None,
         white_player_elo: int = 2800,
         black_player_elo: int = 2800,
+        prompt_prefix: str | None = None,
     ):
         """
         Args:
@@ -59,6 +60,7 @@ class PGNPromptConfig(PromptConfig):
         self.result = result
         self.white_player_elo = white_player_elo
         self.black_player_elo = black_player_elo
+        self.prompt_prefix = prompt_prefix
 
     def _get_result(self, is_white_turn: bool) -> str:
         if self.result is not None:
@@ -132,4 +134,6 @@ class PGNPromptConfig(PromptConfig):
         result = self._get_result(board.turn == chess.WHITE)
         game = self._get_PGN_game(board, result)
         game_str = self._convert_PGN_game_to_string(game, board, result)
+        if self.prompt_prefix:
+            game_str = f"{self.prompt_prefix}\n\n{game_str}"
         return game_str if self.move_response_has_leading_space else game_str + " "
