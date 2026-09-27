@@ -10,6 +10,7 @@ My personal toolkit for exploring LLMs' chess playing abilities.
 - **Prompt Engineering**: Customizable prompt templates for guiding LLMs in chess gameplay. See the [prompt examples notebook](./usage_examples/prompt_examples.ipynb).
 - **Game Logging**: Comprehensive logging of games in PGN format.
 - **Calibration Options**: Tools for calibrating LLM performance with different starting positions. See the [gpt-3.5-turbo-instruct calibration notebook](./usage_examples/GPT3p5TurboInstruct_ELO_calibration.ipynb).
+- **Experiments**: Head-to-head matches between models. See the [gpt-3.5-turbo-instruct vs frontier chat models write-up](./game_logs/gpt_3p5_turbo_instruct_vs_chat_uis/README.md).
 
 ## Installation
 

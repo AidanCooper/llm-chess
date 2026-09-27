@@ -1,0 +1,14 @@
+{
+  "game_id": "game1_gpt5p6_black",
+  "date": "2026-08-16",
+  "white": "GPT-3.5 Turbo Instruct",
+  "black": "GPT-5.6 Sol",
+  "instruct_colour": "white",
+  "opponent_colour": "black",
+  "setup_sent": true,
+  "opponent": "GPT-5.6 Sol",
+  "opponent_effort": "medium",
+  "opponent_url": "https://chatgpt.com/share/6a81ef28-4d78-83eb-920a-72094ad200f1",
+  "result": "1-0",
+  "termination": "ILLEGAL MOVE by GPT-5.6 Sol: 'Bxd6'"
+}
