@@ -1,0 +1,12 @@
+[Event "GPT-3.5 Turbo Instruct vs frontier chat models"]
+[Site "Local (opponent played via web UI)"]
+[Date "2026-08-16"]
+[Round "?"]
+[White "Claude Opus 5"]
+[Black "GPT-3.5 Turbo Instruct"]
+[Result "0-1"]
+[OpponentConversation "https://claude.ai/share/ff3d2104-02f6-476a-a62a-f5e70ca0c69e"]
+[OpponentEffort "medium"]
+[Termination "ILLEGAL MOVE by Claude Opus 5: 'Rxe3'"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 15. Be3 Bg4 16. Qd3 Rae8 17. Nd2 Re6 18. a4 Rfe8 19. Qf1 Qh5 20. f4 Nxe3 21. Rxe3 Rxe3 0-1

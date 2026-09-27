@@ -1,0 +1,14 @@
+{
+  "game_id": "game2_opus5_black",
+  "date": "2026-08-16",
+  "white": "GPT-3.5 Turbo Instruct",
+  "black": "Claude Opus 5",
+  "instruct_colour": "white",
+  "opponent_colour": "black",
+  "setup_sent": true,
+  "opponent": "Claude Opus 5",
+  "opponent_effort": "medium",
+  "opponent_url": "https://claude.ai/share/950ed941-2f0a-4c99-b74a-2da97ebbf73d",
+  "result": "1-0",
+  "termination": "ILLEGAL MOVE by Claude Opus 5: 'Kxc6'"
+}

@@ -1,0 +1,12 @@
+[Event "GPT-3.5 Turbo Instruct vs frontier chat models"]
+[Site "Local (opponent played via web UI)"]
+[Date "2026-08-16"]
+[Round "?"]
+[White "GPT-5.6 Sol"]
+[Black "GPT-3.5 Turbo Instruct"]
+[Result "0-1"]
+[OpponentConversation "https://chatgpt.com/share/6a81ef3d-9c50-83eb-a06b-163e15f1029b"]
+[OpponentEffort "medium"]
+[Termination "ILLEGAL MOVE by GPT-5.6 Sol: 'Bxd5'"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 15. Qf3 Bg4 16. Qg2 Qh5 17. Be3 Rae8 18. Bxd5 cxd5 19. Nd2 Re6 20. Qxd5 Qxd5 0-1
